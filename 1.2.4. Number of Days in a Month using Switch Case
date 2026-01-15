@@ -1,0 +1,44 @@
+
+#include <stdio.h>
+    int main() {
+	int month;
+    // prompt the user to enter the month number shown in expected output
+	printf("Enter month number: ");
+
+		scanf("%d", &month);
+
+	switch (month){
+		;
+	//months with 31 days
+	case 1: // January
+	case 3: // March
+	case 5: // May
+	case 7: // July
+	case 8: // August
+	case 10: // October
+	case 12: // December
+	      printf("31 days\n"); 
+	      break;
+
+	//months with 30 days
+	
+	case 4: // April
+	case 6: // September
+	case 9: // November
+	case 11: // June
+	printf("30 days\n"); 
+	break;
+
+	//month with 28 or 29 days
+	case 2: // February
+	printf("28 or 29 days\n"); 
+	break;
+	
+
+	case 13: // Invalid Month 
+		  printf("Invalid month number\n");
+		  break;
+	}
+
+return 0;
+}
