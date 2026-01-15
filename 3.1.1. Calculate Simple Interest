@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+// Function to calculate simple interest
+int calculateSimpleInterest( int principal, int rate, int time) {
+	long long product = (long long)principal *time *rate;
+	int simpleInterest = product / 100;
+	return simpleInterest;
+	
+	// Complete the function
+	
+}
+
+int main() {
+	int principal, time, rate, simpleInterest;
+    
+    // Read the number of principal, time, and rate from the user
+	if (scanf ("%d %d %d", &principal, &rate, &time) !=3){
+		return 1 ;
+	}
+	
+    
+    
+    
+	// Calculate the simple interest
+	simpleInterest = calculateSimpleInterest(principal, time, rate);
+	
+	// Print the result
+	printf("%d\n", simpleInterest);
+	
+	return 0;
+}
