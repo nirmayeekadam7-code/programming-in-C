@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+    int main() {
+    int num1, num2;
+
+		// input two integers
+		scanf("%d", &num1);
+    scanf("%d", &num2);
+
+		// perform arithmetic operations
+	printf("%d\n", num1 + num2);  //addition
+	printf("%d\n", num1 - num2);  //subtraction
+	printf("%d\n", num1 * num2);  //multiplication
+	printf("%d\n", num1 / num2);  //division
+	printf("%d\n", num1 % num2);  //modulus
+
+
+    return 0;
+	}
